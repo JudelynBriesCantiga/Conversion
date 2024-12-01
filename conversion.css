@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: seagreen (244, 244, 249, 1) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.converter {
+  background: #4DFFFE;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.converter h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: hotpink;
+}
+
+.converter label {
+  font-size: 1em;
+  color: palevioletred;
+}
+
+.converter input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.converter button {
+  background-color: #0078FF;
+  color: skyblue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.converter button:hover {
+  background-color: #7DE6D0;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: steelblue;
+}

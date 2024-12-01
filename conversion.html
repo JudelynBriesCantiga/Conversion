@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peso to Yen Converter</title>
+  <link rel="stylesheet" href="conversion.css">
+</head>
+<body>
+  <div class="converter">
+    <h1>Peso to Yen Converter</h1>
+    <label for="peso">Amount in Pesos:</label>
+    <input type="number" id="peso" placeholder="Enter amount in ₱" min="0">
+    <button id="convert">Convert</button>
+    <p id="result"></p>
+  </div>
+  <script>
+    // JavaScript logic for conversion
+    document.getElementById('convert').addEventListener('click', function () {
+      const pesoAmount = parseFloat(document.getElementById('peso').value);
+      const conversionRate = 2.5; // Example rate: 1 Peso = 2.5 Yen
+      const resultElement = document.getElementById('result');
+
+      if (isNaN(pesoAmount) || pesoAmount <= 0) {
+        resultElement.textContent = 'Please enter a valid amount in Pesos.';
+        return;
+      }
+
+      const yenAmount = (pesoAmount * conversionRate).toFixed(2);
+      resultElement.textContent = `${pesoAmount} Pesos is approximately ¥${yenAmount} Yen.`;
+    });
+  </script>
+</body>
+</html>
